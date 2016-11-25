@@ -1,0 +1,334 @@
+html, body{
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper{
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main{
+  background-color: none;
+}
+
+.ham-menu-button{
+  font-size: 30px;
+  background-color: none;
+  padding: 10px 20px;
+  display: none;
+  cursor: pointer;
+  margin: auto auto auto 0;
+  text-align: center;
+}
+
+.ham-menu{
+  background-color: #fff;
+  display: flex;
+  position: fixed;
+  z-index: 3999;
+  list-style-type: none;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  margin: 0 auto auto -60%;
+  padding: 0;
+  transition: margin 600ms ease-in-out;
+}
+
+.ham-tab{
+  display: block;
+  background-color: none;
+  margin: 0 auto 0 auto;
+  width: 100%;
+  display: flex;
+}
+
+.ham-tab a{
+  text-decoration: none;
+  text-align: center;
+  background-color: none;
+  width: 100%;
+  font-size: 25px;
+  font-family: 'Abel';
+  padding: 25px 0px;
+  color: #000;
+}
+
+.closer{
+  background-color: none;
+  text-align: center;
+  font-size: 45px;
+  padding: 20px 0px;
+}
+
+.navi{
+  background-color: none;
+  display: flex;
+  padding-bottom: 0px;
+}
+
+.logo{
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 400;
+  margin: auto auto auto 0;
+  background-color: none;
+  font-size: 55px;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu{
+  margin: auto 0 auto auto;
+  padding: 10px;
+  background-color: none;
+
+}
+
+.tab{
+  font-family: 'Questrial', sans-serif;
+  font-size: 25px;
+  margin: 0px 10px;
+  text-decoration: none;
+  color: #000;
+  padding: 5px 5px;
+  background-color: none;
+}
+
+.mast{
+  background-color: rgba(0, 0, 0, 0.18);
+  display: flex;
+}
+
+.mast h1, .section2 h1{
+  box-sizing: border-box;
+  padding: 10px;
+  margin: auto auto auto auto;
+  color: #fff;
+  font-size: 85px;
+  font-family: 'Dancing Script';
+  font-weight: 400;
+  background-color: none;
+  text-align: center;
+}
+
+.key-points{
+  display: flex;
+  background-color: none;
+  padding: 50px 0px;
+}
+
+.point{
+  display: inline;
+  background-color: none;
+  margin: auto;
+}
+
+.point h1{
+  font-size: 25px;
+  font-family: 'Questrial';
+  text-align: center;
+}
+
+.point img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+
+}
+
+.section2{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.18);
+  height: 275px;
+}
+
+.footer{
+  display: flex;
+  padding: 20px 0px;
+}
+
+.foot-menu{
+  margin: auto;
+  background-color: none;
+  display: flex;
+}
+
+.foot-tab{
+  font-size: 25px;
+  font-family: 'Abel';
+  color: #000;
+  background-color: none;
+  text-decoration: none;
+  padding: 15px 25px;
+  text-align: center;
+}
+
+.social{
+  margin: auto;
+}
+
+.social img{
+  margin: 0px 10px;
+}
+
+.message{
+  text-align: center;
+  font-family: 'Questrial';
+}
+
+.chokers{
+  padding: 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.product{
+  height: 300px;
+  width: 300px;
+  float: none;
+  background-repeat: none;
+  background-size: cover;
+  margin: 20px auto;
+  /*box-shadow: 1px 1px 7px 1px #888;*/
+  display: flex;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 500ms ease-in-out;
+}
+
+.overlay{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 400ms ease-in-out;
+  margin: auto;
+}
+
+.product_name{
+  margin: auto auto auto auto;
+  color: #fff;
+  padding: 4%;
+  font-size: 20px;
+  font-family: 'Questrial';
+  border: 1px solid #fff;
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+}
+
+.product:hover{
+  transform: scale(1.2);
+}
+
+.product:hover .overlay{
+  background-color: rgba(168, 1, 79, 0.5);
+}
+
+.product:hover .product_name{
+  opacity: 1.0;
+}
+
+.product_section{
+  margin: 25px auto;
+  display: flex;
+}
+
+.choker_picture{
+  margin: auto;
+  background-color: blue;
+  display: flex;
+}
+
+.choker-picture img{
+  margin: auto;
+}
+
+.choker_info{
+  background-color: red;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1000px){
+  .navi{
+    flex-direction: column;
+    height: 20%;
+  }
+
+  .logo{
+    margin: 0 auto auto auto;
+  }
+
+  .menu{
+    margin: 0 auto auto auto;
+    padding: 0px;
+  }
+
+  .mast{
+    height: 80%;
+  }
+
+  .key-points{
+    flex-direction: column;
+  }
+
+  .footer{
+    flex-direction: column;
+  }
+
+  .foot-menu{
+    margin: auto auto 10px auto;
+  }
+
+  .social{
+    margin: 10px auto auto auto;
+  }
+
+}
+
+@media only screen and (max-width: 550px){
+  .menu{
+    display: none;
+  }
+
+  .navi{
+    height: 10%;
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .mast{
+    height: 90%;
+  }
+
+  .logo{
+    font-size: 30px;
+    padding: 0px;
+    background-color: none;
+    margin: auto 25px auto auto;
+  }
+
+  .ham-menu-button{
+    display: block;
+    background-color: none;
+  }
+
+  .key-points{
+    padding-top: 10px;
+  }
+
+  .section2 h1{
+    font-size: 45px;
+  }
+
+  .foot-tab{
+    padding: 10px 10px;
+  }
+
+  .foot-menu{
+    flex-direction: column;
+    padding: 15px 0;
+  }
+}
