@@ -3,14 +3,18 @@ html, body{
   margin: 0;
 }
 
+*{
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
 .wrapper{
-  max-width: 1600px;
+  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
 }
 
 .main{
-  background-color: none;
 }
 
 .ham-menu-button{
@@ -87,7 +91,7 @@ html, body{
 }
 
 .tab{
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-size: 25px;
   margin: 0px 10px;
   text-decoration: none;
@@ -107,7 +111,7 @@ html, body{
   margin: auto auto auto auto;
   color: #fff;
   font-size: 85px;
-  font-family: 'Dancing Script';
+  font-family: 'Questrial';
   font-weight: 400;
   background-color: none;
   text-align: center;
@@ -116,7 +120,7 @@ html, body{
 .key-points{
   display: flex;
   background-color: none;
-  padding: 50px 0px;
+  padding-bottom: 30px;
 }
 
 .point{
@@ -127,7 +131,7 @@ html, body{
 
 .point h1{
   font-size: 25px;
-  font-family: 'Questrial';
+  font-family: 'Lato';
   text-align: center;
 }
 
@@ -190,41 +194,49 @@ html, body{
   width: 300px;
   float: none;
   background-repeat: none;
-  background-size: cover;
-  margin: 20px auto;
+  margin: 15px auto;
   /*box-shadow: 1px 1px 7px 1px #888;*/
   display: flex;
   text-decoration: none;
   overflow: hidden;
-  transition: all 500ms ease-in-out;
 }
 
 .overlay{
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  transition: background-color 400ms ease-in-out;
   margin: auto;
+  background-size: cover;
+  transition: all 300ms ease-in-out;
 }
 
+.overlay2{
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.04);
+  transition: background-color 300ms ease-in-out;
+  padding: 5px;
+}
 .product_name{
   margin: auto auto auto auto;
+  text-align: center;
   color: #fff;
   padding: 4%;
   font-size: 20px;
   font-family: 'Questrial';
   border: 1px solid #fff;
   opacity: 0;
-  transition: opacity 400ms ease-in-out;
-}
-
-.product:hover{
-  transform: scale(1.2);
+  transition: opacity 300ms ease-in-out;
 }
 
 .product:hover .overlay{
-  background-color: rgba(168, 1, 79, 0.5);
+  transform: scale(1.045);
+}
+
+.product:hover .overlay2{
+  background-color: rgba(119, 34, 91, 0.4);
 }
 
 .product:hover .product_name{

@@ -48,10 +48,12 @@
             $imgSrc = $row['images'];
             $id = $row['id'];?>
 
-            <a href="choker_page.php?id=<?php echo $id?>" class="product" style="background-image: url('<?php echo $imgSrc ?>')">
-              <div class="overlay">
-                <div class="product_name">
-                  <?php echo $row['name']?>
+            <a href="choker_page.php?id=<?php echo $id?>" class="product">
+              <div class="overlay" style="background-image: url('<?php echo $imgSrc ?>')">
+                <div class="overlay2">
+                  <div class="product_name">
+                    <?php echo $row['name']?>
+                  </div>
                 </div>
               </div>
             </a>
