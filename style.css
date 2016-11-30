@@ -63,7 +63,8 @@ html, body{
 .closer{
   background-color: none;
   text-align: center;
-  font-size: 45px;
+  font-family: 'Josefin Sans';
+  font-size: 35px;
   padding: 20px 0px;
 }
 
@@ -110,7 +111,7 @@ html, body{
   padding: 10px;
   margin: auto auto auto auto;
   color: #fff;
-  font-size: 85px;
+  font-size: 10vh;
   font-family: 'Questrial';
   font-weight: 400;
   background-color: none;
@@ -328,7 +329,7 @@ html, body{
   }
 
   .mast h1{
-    font-size: 55px; 
+    font-size: 55
   }
 
   .key-points{
@@ -346,5 +347,16 @@ html, body{
   .foot-menu{
     flex-direction: column;
     padding: 15px 0;
+  }
+}
+
+@media only screen and (max-height: 600px){
+  .ham-menu-button{
+    display: block;
+  }
+
+  .menu{
+    display: none;
+    flex-direction: row;
   }
 }

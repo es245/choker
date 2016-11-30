@@ -28,25 +28,9 @@
 <body>
 
   <div class="wrapper">
-    <ul class="ham-menu">
-      <li class="ham-tab"><a href="">Home</a></li>
-      <li class="ham-tab"><a href="">Chokers</a></li>
-      <li class="ham-tab"><a href="">Photos</a></li>
-      <li class="ham-tab"><a href="">Contact</a></li>
-      <li class="closer">⤬</li>
-    </ul>
+    <?php require_once 'ham-menu.php';?>
     <div class="main">
-      <div class="navi">
-        <div class="ham-menu-button">☰</div>
-        <div class="logo">Chokers By Kelly</div>
-        <div class="menu">
-          <a href="index.html" class="tab">Home</a>
-          <a href="chokers.php" class="tab">Chokers</a>
-          <a href="#" class="tab">Photos</a>
-          <a href="#" class="tab">Contact</a>
-        </div>
-
-      </div>
+      <?php require_once 'header.php';?>
 
 
     </div>
@@ -68,19 +52,7 @@
       <h1>Place Holder Text.</h1>
     </div>
 
-    <footer class="footer">
-      <div class="foot-menu">
-        <a href="" class="foot-tab">Home</a>
-        <a href="" class="foot-tab">Chokers</a>
-        <a href="" class="foot-tab">Photos</a>
-        <a href="" class="foot-tab">Contact</a>
-      </div>
-      <div class="social">
-        <img src="insta.svg" alt="" height="50px" width="50px">
-        <img src="fb.svg" alt="" height="50px" width="50px">
-        <img src="pinterest.svg" alt="" height="50px" width="50px">
-      </div>
-    </footer>
+    <?php require_once 'footer.php';?>
     <div class="message"><p>Designed by Emil Sadikoski</p></div>
 
   </div>
