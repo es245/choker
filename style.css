@@ -327,6 +327,10 @@ html, body{
     background-color: none;
   }
 
+  .mast h1{
+    font-size: 55px; 
+  }
+
   .key-points{
     padding-top: 10px;
   }
