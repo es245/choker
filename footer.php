@@ -1,8 +1,8 @@
 <?php
   echo '<footer class="footer">
           <div class="foot-menu">
-            <a href="" class="foot-tab">Home</a>
-            <a href="" class="foot-tab">Chokers</a>
+            <a href="index.php" class="foot-tab">Home</a>
+            <a href="chokers.php" class="foot-tab">Chokers</a>
             <a href="" class="foot-tab">Photos</a>
             <a href="" class="foot-tab">Contact</a>
           </div>
