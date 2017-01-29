@@ -1,0 +1,70 @@
+html, body{
+  background-color: rgba(245,246,247,1);
+}
+
+.box{
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.42);
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+
+.box:hover .name{
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+.box:hover .price{
+  right: 50%;
+  transform: translateX(50%);
+  opacity: 1;
+}
+
+.wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+.name{
+  padding: 0;
+  width: 80%;
+  box-sizing: border-box;
+  font-family: 'Amatic SC';
+  font-weight: 700;
+  font-size: 30px;
+  transition: all ease-in-out 500ms;
+  position: relative;
+  opacity: 0;
+  left: 0;
+  transition: all ease 400ms;
+}
+
+.pic{
+  width: 80%;
+  height: 225px;
+  background-color: #fff;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.price{
+  height: 10%;
+  width: 80%;
+  margin-right: 0;
+  margin-left: auto;
+  padding-top: 2px;
+  text-align: right;
+  font-family: 'Amatic SC';
+  font-weight: 700;
+  font-size: 30px;
+  position: relative;
+  right: 0;
+  opacity: 0;
+  transition: all ease 400ms;
+}

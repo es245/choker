@@ -1,0 +1,13 @@
+.box{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  transition: all ease-in-out 500ms;
+}
+
+.box:hover{
+  left: 0%;
+}
